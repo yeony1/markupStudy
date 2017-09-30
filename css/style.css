@@ -43,7 +43,7 @@ table {
 .reviewBox .linkBox .review .subTit strong {float:left; display:block; width:100%; padding-right:150px; font-size:18px; color:#0000ff;}
 .reviewBox .linkBox .review .subTit .pointBox {overflow:hidden; position:absolute; top:0; right:0;}
 .reviewBox .linkBox .review .subTit .pointBox .star {
-  position:relative; float:left; display:block; width:73px; height:13px;
+  position:relative; float:left; display:block; width:73px; height:13px; margin-top:3px;
   background:url(../images/imgStar.png) 0 bottom no-repeat;
 }
 .reviewBox .linkBox .review .subTit .pointBox .pointStar {
@@ -51,5 +51,8 @@ table {
   background:url(../images/imgStar.png) 0 0 no-repeat;
   font-size:0;
 }
-.reviewBox .linkBox .review .subTit .pointBox .pointTxt {margin-left:10px; float:left; font-size:16px; font-weight:bold; color:#000;}
+.reviewBox .linkBox .review .subTit .pointBox .pointTxt {
+  float:left; margin-top:4px; margin-left:10px;
+  font-size:16px; font-weight:bold; color:#000; lilne-height:1;
+}
 .reviewBox .linkBox .review .txt {padding-top:10px; font-size:16px; color:#333; line-height:20px;}
