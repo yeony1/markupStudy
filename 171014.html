@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="js_test.js"></script>
+  <style>
+    #box {position:absolute; top:0; left:0; width:200px; height:200px; background:black;}
+  </style>
+</head>
+<body>
+  <div id="box">
+    <button type="button" id="red">1</button>
+    <button type="button" id="yellow">2</button>
+    <button type="button" id="green">3</button>
+    <button type="button" id="left">왼쪽</button>
+    <button type="button" id="right">오른쪽</button>
+  </div>
+</body>
+<script>
+  function test(num){
+    if(num > 3 && num < 10){
+      console.log("3보다 크면서 10보다 작다");
+    }else if(num > 10){
+      console.log("10보다 크다");
+    }
+  }
+
+  test(5); //변수, 스트링, 숫자
+  test(11);
+
+
+  function plus(){
+    for(var i=0; i < 11; i++){
+      if(i == 7){
+        console.log(i);
+      }
+
+    }
+  }
+  plus();
+
+
+  document.getElementById("red").onclick = function (){
+    color('red')
+  };
+  document.getElementById("yellow").onclick = function (){
+    color('yellow')
+  };
+  document.getElementById("green").onclick = function (){
+    color('green')
+  };
+  function color(color){
+    var box = document.getElementById("box");
+    box.style.backgroundColor = color;
+  }
+
+
+  document.getElementById("left").onclick = function (){
+    position('left');
+  }
+
+  function position(dir){
+    var box = document.getElementById("box");
+    var currentPosition = box.offsetLeft;
+    console.log(currentPosition);
+
+    if(dir == "left"){
+      currentPosition -= 100;
+      console.log(currentPosition);
+    }
+  }
+
+</script>
+</html>
