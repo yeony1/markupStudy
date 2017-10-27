@@ -33,17 +33,17 @@ table {
   border-bottom:1px dashed gray;
   font-size:24px; font-weight:bold; color:#666; line-height:34px;
 }
-.reviewBox .linkBox {overflow:hidden; display:block; padding:10px 0;}
-.reviewBox .linkBox .img {float:left; width:84px; height: auto; padding:0 10px;}
+.reviewBox .linkBox {position:relative; display:block; padding:10px 0;}
+.reviewBox .linkBox .img {position:absolute; top:15px; left:0; width:84px; height: auto; padding:0 10px;}
 .reviewBox .linkBox .img img {width:100%; height: auto;}
-.reviewBox .linkBox .review {float:left; width:100%;}
-.reviewBox .linkBox .img+.review {width:calc(100% - 84px);}
+.reviewBox .linkBox .review {width:100%;}
+.reviewBox .linkBox .img+.review {margin-left:90px;}
 
 .reviewBox .linkBox .review .subTit {position:relative; overflow:hidden; padding-bottom:10px; border-bottom:1px solid gray;}
 .reviewBox .linkBox .review .subTit strong {float:left; display:block; width:100%; padding-right:150px; font-size:18px; color:#0000ff;}
 .reviewBox .linkBox .review .subTit .pointBox {overflow:hidden; position:absolute; top:0; right:0;}
 .reviewBox .linkBox .review .subTit .pointBox .star {
-  position:relative; float:left; display:block; width:73px; height:13px; margin-top:3px;
+  position:relative; float:left; width:73px; height:13px; margin-top:3px;
   background:url(../images/imgStar.png) 0 bottom no-repeat;
 }
 .reviewBox .linkBox .review .subTit .pointBox .pointStar {
@@ -52,7 +52,7 @@ table {
   font-size:0;
 }
 .reviewBox .linkBox .review .subTit .pointBox .pointTxt {
-  float:left; margin-top:4px; margin-left:10px;
-  font-size:16px; font-weight:bold; color:#000; lilne-height:1;
+  float:left; margin-top:3px; margin-left:10px;
+  font-size:16px; font-weight:bold; color:#000; line-height:1;
 }
 .reviewBox .linkBox .review .txt {padding-top:10px; font-size:16px; color:#333; line-height:20px;}
