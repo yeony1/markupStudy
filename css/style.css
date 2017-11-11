@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*reset*/
+* {box-sizing:border-box;}
+body, h1, h2, h3, h4, h5, h6, div, p, span, button,
+header, footer, article, section, ul, ol, li, dl, dt, dd,
+form, fieldset, input, select, label, textarea, img, a, small {
+  margin:0; padding:0; border:0; word-break:break-all; word-wrap:break-word;
+  color:#333; font-size:12px;
+  font-family: "나눔고딕", "맑은 고딕", "Malgun Gothic", sans-serif, Verdana, Helvetica; font-weight:400;
+}
+html, body {height:calc(100% - 52px);}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+img, input, select, textarea, button {vertical-align:top;}
+legend, caption {overflow:hidden; visibility:hidden; height:0; z-index:-1; text-indent:-9999px; font-size:0; line-height:0;}
+button {background:none; cursor:pointer;}
+a {color:#000; text-decoration:none;}
+a:focus, a:hover, a:active {text-decoration:none;}
+ul, ol {list-style:none;}
+label {cursor:pointer;}
+iframe {border:0;}
+em, i {font-style:normal;}
+select {padding:1px 6px 2px; border:1px solid #000; background:#000; cursor:pointer;}
+textarea {padding:5px 10px; border:1px solid #000; resize:none;}
+table {
+  width:100%; border-spacing:0; table-layout:fixed; border-collapse:collapse;
+  margin:0; padding:0; word-break:break-all; word-wrap:break-word;
+}
+
+/*content*/
+.reviewBox {padding:10px;}
+.reviewBox .mainTit {
+  border-bottom:1px dashed gray;
+  font-size:24px; font-weight:bold; color:#666; line-height:34px;
+}
+.reviewBox .linkBox {position:relative; display:block; padding:10px 0;}
+.reviewBox .linkBox .img {position:absolute; top:15px; left:0; width:84px; padding:0 10px;}
+.reviewBox .linkBox .img img {width:100%; height: auto;}
+.reviewBox .linkBox .img+.review {margin-left:90px;}
+
+.reviewBox .linkBox .review .subTit {position:relative; overflow:hidden; display:block; padding-bottom:10px; border-bottom:1px solid gray;}
+.reviewBox .linkBox .review .subTit strong {float:left; display:block; width:100%; padding-right:140px; font-size:18px; color:#0000ff;}
+.reviewBox .linkBox .review .subTit .pointBox {overflow:hidden; position:absolute; top:0; right:0;}
+.reviewBox .linkBox .review .subTit .pointBox .star {
+  position:relative; float:left; width:73px; height:13px; margin-top:3px;
+  background:url(../images/imgStar.png) 0 bottom no-repeat;
+}
+.reviewBox .linkBox .review .subTit .pointBox .pointStar {
+  position:absolute; top:0; left:0; display:block; width:100%; height:100%;
+  background:url(../images/imgStar.png) 0 0 no-repeat;
+  font-size:0;
+}
+.reviewBox .linkBox .review .subTit .pointBox .pointTxt {
+  float:left; margin-top:3px; margin-left:10px;
+  font-size:16px; font-weight:bold; color:#000; line-height:1;
+}
+.reviewList {padding-top:8px;}
+.reviewList a {display:block; line-height:21px;}
