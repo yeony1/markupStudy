@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*reset*/
+* {box-sizing:border-box;}
+body, h1, h2, h3, h4, h5, h6, div, p, span,
+ul, ol, li, dl, dt, dd, form, fieldset, input, select, label, textarea {
+	margin:0; padding:0; border:0;
+}
+div, p, span, label, li, dt, dd, th, td, a, button, input, select, textarea, strong, i, em {
+	font-family:"NanumGothic-Regular", "나눔고딕", Dotum, "돋움", tahoma, sans-serif; color:#000;
+	word-break:break-all; word-wrap:break-word;
+}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+img, input, select, textarea, button, a {vertical-align:top;}
+legend, caption {
+	overflow:hidden; visibility:hidden; height:0; z-index:-1;
+	text-indent:-9999px; font-size:0; line-height:0;
+}
+button {
+	background:none; cursor:pointer;
+	word-break:break-all; word-wrap:break-word;
+}
+a {
+	word-break:break-all; word-wrap:break-word; text-decoration:none;
+	&:focus, &:hover, &:active {text-decoration:none;}
+}
+strong {font-family:"NanumGothic-Bold";}
+ul, li {list-style:none;}
+label {cusor:pointer;}
+i, em {font-style:normal;}
